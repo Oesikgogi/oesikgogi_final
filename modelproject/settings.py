@@ -86,20 +86,19 @@ WSGI_APPLICATION = 'modelproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': config('DB_NAME'),
-        'USER' : config('DB_USER'),
-        'PASSWORD' : config('DB_PASSWORD'),
-        'HOST' : config('DB_HOST'),
-        'PORT' : 3306,
-        'OPTIONS': {
-            'charset': 'utf8mb4',
+DDATABASES = {
+    'default':{
+        'ENGINE':'django.db.backends.mysql',
+        'NAME':config('DB_NAME'),
+        'USER':config('DB_USER'),
+        'PASSWORD':config('DB_PASSWORD'),
+        'HOST':config('DB_HOST'),
+        'PORT':3306,
+        'OPTION':{
+            'charset':'utf8mb4',
+        },
     }
 }
-}
-
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
